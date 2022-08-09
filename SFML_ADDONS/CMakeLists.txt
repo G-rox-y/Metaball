@@ -1,0 +1,1 @@
+add_library(FPSCounter FPSCounter.cpp FPSCounter.hpp)
