@@ -1,6 +1,6 @@
 #include <queue>
 #include <SFML/Graphics.hpp>
-#include <SFML_ADDONS/FPSCounter.hpp>
+#include <FPSCounter.hpp>
 
 
 void FPSCounter::reset(){

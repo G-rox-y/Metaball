@@ -6,7 +6,7 @@
 #include <queue>
 
 #include <SFML/Graphics.hpp>
-#include <SFML_ADDONS/FPSCounter.hpp>
+#include <FPSCounter.hpp>
 
 const int W = 920, H = 640;
 const float PI = acos(-1);

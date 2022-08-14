@@ -11,11 +11,14 @@ add_subdirectory(external/SFML)
 target_include_directories(${PROJECT_NAME}
     PUBLIC SFML_ADDONS
     PUBLIC external/SFML/include
-    )
+)
 
 target_link_directories(${PROJECT_NAME}
     PRIVATE SFML_ADDONS
-    PRIVATE external/SFML/src
-    )
+    PRIVATE external/SFML/lib
+)
 
-target_link_libraries(${PROJECT_NAME} FPSCounter SFML/Graphics/sfml-graphics)
+target_link_libraries(${PROJECT_NAME}
+    FPSCounter 
+    "${ADDITIONAL_LIBRARY_DEPENDENCIES}"
+)
